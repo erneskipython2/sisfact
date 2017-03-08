@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Comida Favorita de los Estudiantes UNERG</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            }
+        },
+        title: {
+            text: 'Comida Favorita de los Estudiantes UNERG'
+        },
+        subtitle: {
+            text: 'Encuesta en Cafetin Informatica'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: 100,
+                depth: 45
+            }
+        },
+        series: [{
+            name: 'Estudiantes',
+            data: [
+                ['Empanadas', 8],
+                ['Yogurt', 3],
+                ['Snacks', 1],
+                ['Tequeños', 6],
+                ['Sandwiches', 8],
+                ['Perro Caliente', 4],
+                ['Torta', 4],
+                ['Galletas', 1],
+                ['Brownie', 1]
+            ]
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/highcharts-3d.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="height: 400px"></div>
+	</body>
+</html>
